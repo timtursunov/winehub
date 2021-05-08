@@ -1,0 +1,18 @@
+.mainConversation {
+  height: 150vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+  &__item {
+    padding: 30px 0;
+  }
+  &__paragraph {
+    font-family: "Antonio";
+    width: 800px;
+  }
+  &__heading {
+    font-family: "Abril Fatface";
+  }
+}

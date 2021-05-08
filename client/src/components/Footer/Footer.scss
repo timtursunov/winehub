@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__text-div {
+    padding: 25px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px;
+  }
+  &__icon-div {
+    display: flex;
+    margin-right: 25px;
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+  &__heading {
+    text-decoration: none;
+    color: #032825;
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  font-family: "Antonio";
+  color: #032825;
+  display: flex;
+  max-width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1.4rem;
+  &__nav-item {
+    font-weight: 300;
+    letter-spacing: 1.5;
+  }
+  &__logo-div {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__nav-paragraph {
+    font-weight: 100;
+    text-decoration: none;
+    color: #032825;
+    margin-left: 25px;
+    margin-right: 25px;
+    letter-spacing: 1.5px;
+  }
+  &__heading {
+    font-family: Bandeins;
+    position: fixed;
+    font-size: 2.25rem;
+    text-decoration: none;
+    color: #032825;
+    margin-bottom: 8px;
+  }
+  &__searchbar {
+    width: 250px;
+    height: 46px;
+    color: #fcfaf5;
+    opacity: 1;
+    background: #032825;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 300px;
+    font-family: Antonio;
+  }
+}

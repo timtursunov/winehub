@@ -1,0 +1,21 @@
+@use './styles/mixins.scss' as *;
+@use './styles/typography.scss' as *;
+@use './styles/variables.scss' as *;
+@use './components/Header/Header.scss' as *;
+@use './components/MainHero/MainHero.scss' as *;
+@use './components/MainConversation/MainConversation.scss' as *;
+@use './components/Footer/Footer.scss' as *;
+@use './pages/About/About.scss' as *;
+
+.App {
+  text-align: center;
+  background-color: #fcfaf5;
+  // background-color: #f8dbd5;
+  font-family: "Antonio", "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+}

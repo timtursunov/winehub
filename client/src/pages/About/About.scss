@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__container {
+    height: 82vh;
+    padding: 10px 0;
+  }
+  &__paragraph-div {
+    width: 1000px;
+  }
+  &__heading-div {
+    padding-bottom: 36px;
+  }
+  &__heading {
+    font-size: 56px;
+    font-family: "Abril Fatface";
+  }
+  &__paragraph {
+    font-size: 24px;
+    line-height: 1.7;
+  }
+  &__image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  &__image {
+    width: 400px;
+  }
+}

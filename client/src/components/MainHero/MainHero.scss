@@ -1,0 +1,26 @@
+.mainHero {
+  display: flex;
+  height: 90vh;
+  padding-top: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__image-div {
+    padding-bottom: 50px;
+  }
+  &__image {
+    width: 300px;
+  }
+  &__heading-div {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  &__heading--selected {
+    font-family: Antonio;
+    color: #4c40e0;
+    text-transform: uppercase;
+  }
+  &__heading {
+    font-size: 48px;
+  }
+}
