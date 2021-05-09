@@ -44,12 +44,14 @@ class Stocklist extends Component {
             <div className='stocklist'>
                 <div >
                     <h2>now serving!!</h2>
-                    <div className='stocklist__ wines'>
+                    <p>@</p>
+                    <p>SAINT LAWRENCE MARKET</p>
+                    <div className='stocklist__wines'>
                         <div className='stocklist__wines-container'>
-                            {this.state.wines.map(({ name, price, category, grape, country, region, qty, instock, year ,description ,image}) => (
+                            {this.state.wines.map(({ _id,  name, price, category, grape, country, region, qty, instock, year ,description ,image}) => (
                                 <div className='stocklist__wine'>
-                                    <div className='stocklist__wine-card'>
-                                        <div className='stoclist__wine-img'></div>
+                                    <div key={_id} className='stocklist__wine-card'>
+                                        <div className='stocklist__wine-img'></div>
                                         <div className='stocklist__wine-bio'>
                                             <p className='stocklist__wine-name'>{name}</p>
                                             <p className='stocklist__wine-price'>{price}</p>

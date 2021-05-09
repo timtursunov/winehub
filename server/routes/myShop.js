@@ -37,7 +37,8 @@ router.post('/', async (req, res) => {
     })
     try {
         const newProduct = await product.save()
-        res.status(201).json(newProduct)
+        const allProducts = await Product.find({});
+        res.status(201).json(allProducts)
     } catch (err) {
         res.status(500).json({message: err.message})
     }
@@ -47,7 +48,8 @@ router.delete('/:id', async (req,res) => {
     try {
     const {id} = req.params;
     const deletedProduct = await Product.findByIdAndDelete(id);
-    res.send('deleted')
+    const product = await Product.find({});
+    res.status(201).json(product)
     } catch (err) {
         res.status(500).json({
             message: err.message
@@ -60,7 +62,8 @@ router.put('/:id', async (req,res) => {
 
         const {id} = req.params;
         const product = await Product.findByIdAndUpdate(id, req.body, {runValidators: true});
-        res.send('updated')
+        const allProducts = await Product.find({});
+        res.status(201).json(allProducts)
     } catch (err) {
             res.status(500).json({
                 message: err.message

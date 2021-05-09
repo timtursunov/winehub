@@ -1,0 +1,36 @@
+.stocklist {
+  height: 150vh;
+  &__wines-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__wine-img {
+    height: 200px;
+    width: 150px;
+    background-image: url("../../assets/images/jocelyn-morales-pXyNqLpNqAU-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  &__wine {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: blueviolet 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #4c40e0;
+    padding: 40px 20px;
+    width: 250px;
+    margin: 20px;
+  }
+  &__wine-bio {
+    padding: 10px 0;
+    width: auto;
+  }
+  &__wine-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

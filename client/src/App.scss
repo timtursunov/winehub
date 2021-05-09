@@ -7,6 +7,8 @@
 @use './components/Footer/Footer.scss' as *;
 @use './pages/About/About.scss' as *;
 @use './pages/Blog/Blog.scss' as *;
+@use './pages/StockList/Stocklist.scss' as *;
+@use './pages/Profile/Profile.scss' as *;
 
 .App {
   text-align: center;

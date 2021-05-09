@@ -37,29 +37,11 @@ class LoginForm extends Component {
           
     render(){
         return (
-            // <div className='log-in'>
-            //     <div className='log-in__container'>
-            //         <div className='log-in__heading-div'>
-            //             <h2 className='log-in__heading'>
-            //             Hi There! Please Log in to see more
-            //             </h2>
-            //         </div>
-            //         <form className='log-in__form'>
-            //             <input value={this.state.email} onChange={this.handleChange} type="text" name="name" placeholder='email' />
-            //             <input value={this.state.password} onChange={this.handleChange} type="text" name="name" placeholder='password' />
-            //             <input onClick={this.login} type="submit" value="Log in" />
-            //         </form>
-            //         <div>
-            //             <a href="/sign-up">Not on WineHub yet? Sign Up</a>
-            //         </div>
-            //     </div>
-            // </div>  
         <div className="log-in">
             <form className='log-in__form'>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                     <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
