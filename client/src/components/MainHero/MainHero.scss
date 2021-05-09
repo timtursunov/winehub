@@ -5,11 +5,16 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  &__image-subdiv {
+    perspective: 1200px;
+  }
   &__image-div {
     padding-bottom: 50px;
+    // transform: rotateY(20deg) rotateX(20deg);
   }
   &__image {
-    width: 300px;
+    width: 400px;
+    // transform: rotate(20deg);
   }
   &__heading-div {
     width: 100%;

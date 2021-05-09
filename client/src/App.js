@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import About from './pages/About/About'
 import Login from './pages/Login/Login';
 import myShop from './pages/myShop/myShop'
+import StockList from './pages/StockList/Stocklist'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/about" exact component={About}/>
             <Route exact path='/log-in' excat component={Login}/>
             <Route exact path='/my-shop' excat component={myShop}/>
+            <Route exact path='/stocklist' excat component={StockList}/>
           </Switch>
         </Router>
         <Footer/>

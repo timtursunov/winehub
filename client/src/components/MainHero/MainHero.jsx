@@ -12,9 +12,11 @@ class MainHero extends Component {
         const d = new Date();
         return (
                 <div className='mainHero'>
-                    <div className='mainHero__image-div'>
-                        <img className='mainHero__image' src={HeroImage} alt="hero-image"/>
-                    </div>
+                    <figure className='mainHero__image-subdiv'>
+                        <div className='mainHero__image-div'>    
+                            <img className='mainHero__image' src={HeroImage} alt="hero-image"/>
+                        </div>
+                    </figure>
                     <div className='mainHero__heading-div'>
                         <p className='mainHero__heading'>this month(/<span className='mainHero__heading--selected'>{months[d.getMonth()]}</span>/) favourites</p>
                     </div>
