@@ -1,0 +1,30 @@
+.blog {
+  height: 80vh;
+  &__container {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    width: 400px;
+  }
+  &__text {
+    padding: 20px;
+    width: 420px;
+  }
+  &__heading-div {
+    padding-bottom: 20px;
+  }
+  &__heading {
+    font-family: Antonio;
+    text-align: right;
+  }
+  &__heading-subdiv {
+    color: #4c40e0;
+  }
+  &__paragraph {
+    font-family: sans-serif;
+    text-align: left;
+  }
+}
