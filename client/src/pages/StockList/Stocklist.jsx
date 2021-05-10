@@ -10,14 +10,11 @@ class Stocklist extends Component {
     state = {
         wines: [],
         modalIsOpen: false,
-        // _id: null,
-        // name: ''
     }
     openModal(id, itemName) {
         this.setState({
             modalIsOpen : true,
-            // currentId: _id,
-            // currentName: name
+
         });
     }
     closeModal() {
@@ -42,10 +39,11 @@ class Stocklist extends Component {
     render(){
         return (
             <div className='stocklist'>
-                <div >
-                    <h2>now serving!!</h2>
-                    <p>@</p>
-                    <p>SAINT LAWRENCE MARKET</p>
+                <div className='stocklist__section' >
+                    <div className='stocklist__text-div'>
+                        <h1 className='stocklist__heading'>our products</h1>
+                        <p className='stocklist__paragraph'>SAINT LAWRENCE MARKET</p>
+                    </div>
                     <div className='stocklist__wines'>
                         <div className='stocklist__wines-container'>
                             {this.state.wines.map(({ _id,  name, price, category, grape, country, region, qty, instock, year ,description ,image}) => (

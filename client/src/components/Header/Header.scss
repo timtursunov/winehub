@@ -1,5 +1,7 @@
 .header {
   font-family: "Antonio";
+  width: 100%;
+  position: fixed;
   color: #032825;
   display: flex;
   max-width: 100%;
@@ -29,7 +31,6 @@
   }
   &__heading {
     font-family: Bandeins;
-    position: fixed;
     font-size: 2.25rem;
     text-decoration: none;
     color: #032825;

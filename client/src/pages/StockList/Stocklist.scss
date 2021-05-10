@@ -1,9 +1,24 @@
 .stocklist {
-  height: 150vh;
+  height: 200vh;
+  &__section {
+    padding: 120px 0 120px 0;
+  }
   &__wines-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  &__text-div {
+    padding: 20px 0 20px 0;
+  }
+  &__heading {
+    font-size: 3rem;
+    font-family: Antonio;
+    margin-bottom: 40px;
+  }
+  &__paragraph {
+    font-size: 2rem;
+    font-family: Antonio;
   }
   &__wine-img {
     height: 200px;

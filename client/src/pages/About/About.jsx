@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AboutImage from '../../assets/images/christiann-koepke-szqxBF4OUsc-unsplash.jpg'
+import AboutImage from '../../assets/images/mauro-lima-hzvzzRluWEA-unsplash.jpg'
 
 class MainHero extends Component {
     render(){

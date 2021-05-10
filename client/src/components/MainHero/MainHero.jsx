@@ -8,14 +8,11 @@ class MainHero extends Component {
         left: 0,
         top: 0
     }
-
     componentDidMount() {
         document.addEventListener('mousemove', (e) => {
             this.setState({left: e.pageX, top: e.pageY});
         });
     }
-
-    
     render(){
         const months = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -24,7 +21,7 @@ class MainHero extends Component {
         return (
                 <div className='mainHero'>
                     <figure className='mainHero__image-subdiv'>
-                        <div style={{transform: `rotateX(${(this.state.top - (window.innerHeight) / 2) / 15 }deg) rotateY(${(this.state.left - (window.innerWidth) / 2 ) / 15}deg)`}} className='mainHero__image-div'>    
+                        <div style={{transform: `rotateX(${(this.state.top - (window.innerHeight) / 2) / -20 }deg) rotateY(${(this.state.left - (window.innerWidth) / 2 ) / 20}deg)`}} className='mainHero__image-div'>    
                             <img className='mainHero__image' src={HeroImage} alt="hero-image"/>
                         </div>
                     </figure>

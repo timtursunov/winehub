@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import fire from '../../auth/firebase';
 import axios from 'axios';
 import Modal from 'react-modal';
 import ProfileModal from '../../components/ProfileModal/ProfileModal'
@@ -7,7 +6,6 @@ import ProfileModal from '../../components/ProfileModal/ProfileModal'
 class Profile extends Component {
     constructor(props) {
         super(props);
-        this.logout = this.logout.bind(this);
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.updateInventory = this.updateInventory.bind(this);
@@ -46,13 +44,11 @@ class Profile extends Component {
                 console.log('oops', err)
             })
     }
-
     updateInventory(inventory) {
         this.setState({
             wines : inventory
         })
     }
-
     openModal(data) {
         if (data) {
             let selectedItem = {...data}
@@ -98,15 +94,10 @@ class Profile extends Component {
             editItem: false
         });
     }
-
-    logout() {
-        fire.auth().signOut();
-    }
     render(){
         return (
             <div className='profile'>
-                <h1>Welcome Back Tim !</h1>
-                <button onClick={this.logout}>Logout</button>
+                <h1>Your Products</h1>
                 <div className='profile__table-div'>
                     <table className='profile__table'>
                             <button onClick={()=>this.openModal()}>add</button>
@@ -139,7 +130,6 @@ class Profile extends Component {
                 <Modal isOpen={this.state.modalIsOpen} shouldCloseOnOverlayClick={true} onRequestClose={() => this.closeModal()}>
                     <ProfileModal selectedItem={this.state.selectedItem} editItem={this.state.editItem} closeModal={this.closeModal} updateInventory={this.updateInventory}></ProfileModal>
                 </Modal>
-
             </div>  
         )
     }
