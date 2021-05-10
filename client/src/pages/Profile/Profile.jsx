@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
-import ProfileModal from '../../components/ProfileModal/ProfileModal'
+import ProfileModal from '../../components/ProfileModal/ProfileModal';
 
 class Profile extends Component {
     constructor(props) {
@@ -135,5 +135,3 @@ class Profile extends Component {
     }
 }
 export default Profile
-
-// {this.state.filteredInventory.map(({ id, itemName, category, status, quantity, warehouseName }) => ( 

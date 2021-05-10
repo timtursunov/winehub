@@ -9,10 +9,9 @@ import myShop from './pages/myShop/myShop'
 import StockList from './pages/StockList/Stocklist'
 import Blog from './pages/Blog/Blog'
 import Profile from './pages/Profile/Profile'
-
+import Login from './pages/Login/Login'
 
 function App() {
-
   return (
     <div className="App">
         <Header/>
@@ -24,7 +23,7 @@ function App() {
             <Route exact path='/stocklist' excat component={StockList}/>
             <Route exact path='/blog' excat component={Blog}/>
             <Route exact path='/profile' excat component={Profile}/>
-            
+            <Route exact path='/login' excat component={Login}/>
           </Switch>
         </Router>
         <Footer/>
