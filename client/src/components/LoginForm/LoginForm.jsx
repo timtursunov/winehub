@@ -6,7 +6,7 @@ class LoginForm extends Component {
         super(props);
         this.login = this.login.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.signup = this.signup.bind(this);
+        // this.signup = this.signup.bind(this);
         this.state = {
           email: '',
           password: ''
@@ -23,14 +23,14 @@ class LoginForm extends Component {
           });
       }
     
-      signup(e){
-        e.preventDefault();
-        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-        }).then((u)=>{console.log(u)})
-        .catch((error) => {
-            console.log(error);
-          })
-      }
+      // signup(e){
+      //   e.preventDefault();
+      //   fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+      //   }).then((u)=>{console.log(u)})
+      //   .catch((error) => {
+      //       console.log(error);
+      //     })
+      // }
     render() {
         return(
             <div className="LoginForm">
@@ -44,7 +44,7 @@ class LoginForm extends Component {
                     <input className='LoginForm__input' value={this.state.password} onChange={this.handleChange} type="password" name="password" placeholder="Password" />
                   </div>
                   <button className='LoginForm__btn' type="submit" onClick={this.login} >Login</button>
-                  <button className='LoginForm__btn' onClick={this.signup} style={{marginLeft: '25px'}} >Signup</button>
+                  <a className='LoginForm__link' href="/signUp">dont have an account ?</a>
               </form>
             </div>
         )

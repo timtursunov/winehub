@@ -10,6 +10,7 @@ import StockList from './pages/StockList/Stocklist'
 import Blog from './pages/Blog/Blog'
 import Profile from './pages/Profile/Profile'
 import Login from './pages/Login/Login'
+import Signup from './components/SignUp/SignUp'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route exact path='/blog' excat component={Blog}/>
             <Route exact path='/profile' excat component={Profile}/>
             <Route exact path='/login' excat component={Login}/>
+            <Route exact path='/signup' excat component={Signup}/>
+
           </Switch>
         </Router>
         <Footer/>

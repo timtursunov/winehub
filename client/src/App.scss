@@ -11,6 +11,7 @@
 @use './pages/Profile/Profile.scss' as *;
 @use './components/LoginForm/LoginForm.scss' as *;
 @use './components/ProfileModal/ProfileModal.scss' as *;
+@use './components/SignUp/Signup.scss' as *;
 
 .App {
   text-align: center;
