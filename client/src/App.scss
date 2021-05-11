@@ -10,6 +10,7 @@
 @use './pages/StockList/Stocklist.scss' as *;
 @use './pages/Profile/Profile.scss' as *;
 @use './components/LoginForm/LoginForm.scss' as *;
+@use './components/ProfileModal/ProfileModal.scss' as *;
 
 .App {
   text-align: center;

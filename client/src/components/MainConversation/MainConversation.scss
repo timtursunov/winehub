@@ -7,6 +7,18 @@
   &__container {
     overflow: hidden;
   }
+  &__image-div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30%;
+  }
+  &__image {
+    position: absolute;
+    background-image: url(../../assets/images/irene-kredenets-igmEXwt0w2s-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 400px 150px 200px 150px;
+  }
   &__heading {
     display: flex;
   }
@@ -27,7 +39,4 @@
     display: inline-block;
     flex: 0 0 auto;
   }
-}
-
-h1 {
 }

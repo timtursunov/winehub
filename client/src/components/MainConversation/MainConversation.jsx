@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import { gsap } from "gsap";
 
 function MainConversation (){
@@ -25,7 +25,12 @@ function MainConversation (){
             
         <div className='mainConversation'>
             <div className='mainConversation__container'>
-                <div>
+                <div className='mainConversation__image-div'>
+                    <div className='mainConversation__image'>
+                    </div>
+
+                </div>
+                <div className='mainConversation__wine-item'>
                     <h2 ref={oneRef} className='mainConversation__heading'>
                         <span className='mainConversation__span'>Flash of Josh</span>
                         <span className='mainConversation__span'>Flash of Josh</span>
@@ -34,7 +39,7 @@ function MainConversation (){
                         <span className='mainConversation__span'>Flash of Josh</span>
                     </h2>
                 </div>
-                <div>
+                <div className='mainConversation__wine-item'>
                 <h2 ref={twoRef} className='mainConversation__heading'>
                         <span className='mainConversation__span'>Buddha’s flare</span>
                         <span className='mainConversation__span'>Buddha’s flare</span>
@@ -43,7 +48,7 @@ function MainConversation (){
                         <span className='mainConversation__span'>Buddha’s flare</span>
                     </h2>
                 </div>
-                <div>
+                <div className='mainConversation__wine-item'>
                     <h2 ref={threeRef} className='mainConversation__heading'>
                         <span className='mainConversation__span'>Trigger Happy</span>
                         <span className='mainConversation__span'>Trigger Happy</span>
@@ -52,7 +57,7 @@ function MainConversation (){
                         <span className='mainConversation__span'>Trigger Happy</span>
                     </h2>
                 </div>
-                <div className=''>
+                <div className='mainConversation__wine-item'>
                     <h2 ref={fourRef} className='mainConversation__heading'>
                         <span className='mainConversation__span'>Chilled Indian Spirit</span>
                         <span className='mainConversation__span'>Chilled Indian Spirit</span>

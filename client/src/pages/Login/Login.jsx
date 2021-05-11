@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import fire from '../../auth/firebase'
 import LoginForm from '../../components/LoginForm/LoginForm'
-import MyProfile from '../../components/MyProfile/MyProfile'
+import MyProfile from '../..//pages/Profile/Profile'
 class Login extends Component {
     constructor() {
         super();
@@ -13,8 +13,7 @@ class Login extends Component {
     
       componentDidMount() {
         this.authListener();
-      }
-    
+      }    
       authListener() {
         fire.auth().onAuthStateChanged((user) => {
           console.log(user);

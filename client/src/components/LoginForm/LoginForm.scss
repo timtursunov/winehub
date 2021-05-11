@@ -1,4 +1,37 @@
 .LoginForm {
   height: 100vh;
   padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__form {
+    border: #e83e8c solid 2px;
+    border-radius: 2px;
+    padding: 80px;
+  }
+  &__section-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label {
+    margin-right: 10px;
+  }
+  &__input {
+    border-radius: 3px;
+    color: #4c40e0;
+  }
+  &__btn {
+    background-color: white;
+    color: #4c40e0;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    font: inherit;
+    cursor: pointer;
+    font-family: Antonio;
+    margin-top: 20px;
+  }
+  &__section-div {
+    padding: 10px 0;
+  }
 }

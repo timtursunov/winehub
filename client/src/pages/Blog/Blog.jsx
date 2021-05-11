@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
 import img from '../../assets/images/jenna-duffy-eG8EXvfTBU8-unsplash.jpg'
 class Stocklist extends Component {
     render(){

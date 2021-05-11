@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import StocklistModal from '../../components/StockListModal/StocklistModal'
 class Stocklist extends Component {
         constructor(props) {
             super(props)
@@ -11,11 +12,32 @@ class Stocklist extends Component {
         wines: [],
         modalIsOpen: false,
     }
-    openModal(id, itemName) {
-        this.setState({
-            modalIsOpen : true,
-
-        });
+    openModal(data) {
+        if (data) {
+            let selectedItem = {...data}
+            this.setState({
+                modalIsOpen : true,
+                selectedItem,
+                editItem: true
+            });
+        } else {
+            let selectedItem = {
+                _id: '',
+                name: '',
+                price: '', 
+                qty: '', 
+                year: '', 
+                country: '', 
+                grape: '',
+                region: '', 
+                category: ''
+            }
+            this.setState({
+                modalIsOpen : true,
+                selectedItem,
+                editItem: false,
+            });
+        }
     }
     closeModal() {
         this.setState({
@@ -54,18 +76,21 @@ class Stocklist extends Component {
                                             <p className='stocklist__wine-name'>{name}</p>
                                             <p className='stocklist__wine-price'>{price}</p>
                                         </div>
-                                        <div>
-                                            {/* <button onClick={()=> this.openModal(_id, name)}></button> */}
-                                        </div>
                                     </div>
+                                    <div>
+                                            <button className='stocklist__btn' onClick={()=> this.openModal(_id, name)}>
+                                                <p className='stocklist__wine-price'>see more?</p>
+                                            </button>
+                                        </div>
                                 </div>
                             ))}
                         </div>    
                     </div>
                 </div>
-                <Modal     
+                <Modal  isOpen={this.state.modalIsOpen} shouldCloseOnOverlayClick={true} onRequestClose={() => this.closeModal()}    
                 style={
-                    { overlay: {backgroundColor: 'rgba(19, 24, 24, 0.75)'}}}>
+                    { overlay: {backgroundColor: 'rgba(76, 64, 224, 0.75)'}}}>
+                        <StocklistModal/>
                 </Modal>
             </div>  
         )

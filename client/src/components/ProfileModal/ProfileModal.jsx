@@ -48,22 +48,23 @@ class ProfileModal extends Component {
     render(){
         return (
             <div className='profileModal'>
-                <h1>jgjhg</h1>
-                <div>
-                    <input value={this.state.name ? this.state.name: ''} type="text"  onChange={(event) => this.handleDescriptionChange(event, 'name')}/>
-                    <input value={this.state.price ? this.state.price: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'price')}/>
-                    <input value={this.state.qty ? this.state.qty: ''}  type="text" onChange={(event) => this.handleDescriptionChange(event, 'qty')}/>
-                    <input value={this.state.year ? this.state.year: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'year')}/>
-                    <input value={this.state.country ? this.state.country: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'country')}/>
-                    <input value={this.state.grape ? this.state.grape: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'grape')}/>
-                    <input value={this.state.region ? this.state.region: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'region')}/>
-                    <input value={this.state.category ? this.state.category: ''} type="text" onChange={(event) => this.handleDescriptionChange(event, 'category')}/>
+                <div className='profileModal__heading-div'>
+                    <h1 classNam='profileModal__heading'>wine editor</h1>
                 </div>
-                <button onClick={()=>this.saveItem()}>SAVE</button>
+                <div className='profileModal__inputs'>
+                    <input className='profileModal__input' value={this.state.name ? this.state.name: ''} type="text" placeholder='name'  onChange={(event) => this.handleDescriptionChange(event, 'name')}/>
+                    <input className='profileModal__input' value={this.state.price ? this.state.price: ''} type="text" placeholder='price' onChange={(event) => this.handleDescriptionChange(event, 'price')}/>
+                    <input className='profileModal__input' value={this.state.qty ? this.state.qty: ''}  type="text" placeholder='qty' onChange={(event) => this.handleDescriptionChange(event, 'qty')}/>
+                    <input className='profileModal__input' value={this.state.year ? this.state.year: ''} type="text" placeholder='year' onChange={(event) => this.handleDescriptionChange(event, 'year')}/>
+                    <input className='profileModal__input' value={this.state.country ? this.state.country: ''} type="text" placeholder='country' onChange={(event) => this.handleDescriptionChange(event, 'country')}/>
+                    <input className='profileModal__input'  value={this.state.grape ? this.state.grape: ''} type="text" placeholder='grape' onChange={(event) => this.handleDescriptionChange(event, 'grape')}/>
+                    <input className='profileModal__input' value={this.state.region ? this.state.region: ''} type="text" placeholder='region' onChange={(event) => this.handleDescriptionChange(event, 'region')}/>
+                    <input className='profileModal__input' value={this.state.category ? this.state.category: ''} type="text" placeholder='category' onChange={(event) => this.handleDescriptionChange(event, 'category')}/>
+                </div>
+                <button className='profileModal__btn' onClick={()=>this.saveItem()}>SAVE</button>
             </div>  
         )
     }
 }
 export default ProfileModal
 
-// {this.state.filteredInventory.map(({ id, itemName, category, status, quantity, warehouseName }) => ( 
